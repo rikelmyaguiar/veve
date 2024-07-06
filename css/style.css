@@ -1,0 +1,272 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+}
+a { /*estilo das palavras linkadas*/ 
+    text-decoration: none;
+    color: inherit;
+    margin-left: 10px;
+}
+.fundo-da-logo { /*parte de tras da logo e dos itens*/
+    border-bottom: 1px solid rgb(191, 162, 0);
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.itens { /*itens do menu na parte de cima*/
+    color: rgb(191, 162, 0);
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    margin: 10px;
+}
+.titulo-do-site { /*titulo do site (braceletes)*/
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.botao-do-carrinho { /*botoes para abrir o carrinho e o menu*/
+    display: flex;
+    align-items: center;
+    margin-left: 140px;
+}
+.botoes { /*espaçamento dos botoes de carrinho e menu*/
+    margin: 30px;
+    cursor: pointer;
+}
+
+.menu-de-itens { /*menu lateral*/
+    background-color: rgb(25, 25, 25);
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    transition: .1s;
+    
+}
+.titulo-itens{ /*titulo do menu lateral*/
+    color: rgb(191, 162, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+}
+.itens-do-menu{ /*opçoes de itens do menu lateral*/
+    color: rgb(191, 162, 0);
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    margin: 30px;
+}
+.botao-fechar { /* posição do botao de sair do menu lateral*/
+    position: fixed;
+    top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 5px;
+ }
+ .estilo-botao-fechar {
+    color: #858585;
+    font-size: 50px;
+    font-weight: bold;
+ }
+.menu-de-itens.abrirmenu{ /*script para abrir o menu lateral*/
+    width: 30%;
+}
+.menu-de-itens.abrirmenu ~.overlay-menu{ /*script para escurecer o fundo da página ao abrir o menu lateral*/
+    display: block;
+}
+.overlay-menu { /*fundo ao abrir o menu*/
+    background-color: rgba(0, 0, 0, 0.44);
+     width: 100%;
+     height: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 9997;
+     display: none;
+ }
+.todos-cards { /*envolve todos os cards*/
+     /*background-color: aliceblue;*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 0 auto;
+}
+.card { /*card individual*/
+    /*background-color: rgb(0, 136, 255);*/
+    width: 200px;
+    height: 330px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px;
+    word-wrap: break-word;
+}
+.titulo-produto { /*titulo do produto no card*/
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.preco { /*preco dos produtos nos cards*/
+    color: rgb(191, 162, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    margin-right: 25px;
+}
+.foto-produto { /*foto dos produtos nos cards*/
+    width: 180px;
+    height: 180px;
+    border: 2px solid rgb(191, 162, 0);
+    cursor: pointer;
+    margin-left: 10px;
+}
+.botao-adicionar { /*botao do card*/
+    background-color: rgb(191, 162, 0);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.botao-do-whats { /* botao do whats fixo na rolagem*/
+    position: fixed;
+    bottom: 60px;
+    right: 60px;
+    z-index: 9998;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+main { /*espaço do footer de baixo e de cima*/
+    height: 150px;
+    width: 100%;
+}
+footer { /*footer das redes*/
+    background-color: rgb(18, 18, 18);
+    width: 100%;
+    height: 160px;
+    bottom: 0;
+    border-top:1px solid rgb(191, 162, 0);
+    display: flex;
+    justify-content: center;
+}
+.direitos { /*footer dos direitos autorais*/
+    background-color: rgb(18, 18, 18);
+    border-top: 1px solid white;
+    color: aliceblue;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+p { /*direitos reservados*/
+   margin-top: 30px;
+   margin-left: 30px;
+}
+.redes {
+    color: gray;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.contato{
+    color: gray;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+.localização{
+    color: gray;
+    width: 180px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+}
+h2 { /*titulos do footer*/
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: gray;
+    display: flex;
+}
+
+.sla{ /*envolve cada titulo do footer (redes, contato)*/
+    width: 190px;
+    height: 130px;
+    margin: 0 90px;
+}
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/*RESPONSIVO*/
+@media (max-width: 430px) {
+    .itens{
+        display: none;
+    }
+    .todos-cards{
+        width: 420px;
+    }
+    .card {
+        margin: 5px ;
+    }
+    .botao-do-carrinho{
+        margin-left: 30px;
+    }
+    .menu-de-itens.abrirmenu{
+        width: 80%;
+    }
+    .botoes{
+        margin: 15px;
+    }
+    footer{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .direitos {
+        width: 100%;
+    }
+}
+@media (max-width: 360px) {
+    .todos-cards {
+        width: 400px;
+    }
+    .card { /*card individual*/
+    width: 170px;
+    height: 300px;
+    border-radius: 8px;
+    margin: 5pxpx;
+    }
+    .botao-adicionar {
+        width: 170px;
+    }
+    .foto-produto {
+        width: 150px;
+        height: 150px;
+    }
+}

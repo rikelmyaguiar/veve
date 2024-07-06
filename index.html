@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico.ico" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+    </style>
+    <title>catalogo</title>
+</head>
+<body>
+    <!-------parte de tras da logo e dos itens------>
+    <div class="fundo-da-logo">
+        <div class="logo">
+            <img width="150px", height="150px" src="imagens/studiologo.png" alt="logo">
+        </div>
+        <div class="itens">
+            MENU
+        </div>
+        <div class="itens">
+            BRACELETES
+        </div>
+        <div class="itens">
+            BRINCOS
+        </div>
+        <div class="itens">
+            COLARES
+        </div>
+        <div class="itens">
+            COSMÉTICOS
+        </div>
+        <div class="botao-do-carrinho">
+            <div class="botoes">
+                <img src="imagens/menu-aberto.png" alt="botão do menu" id="botaomenu">
+            </div>
+            <div class="botoes">
+                <img src="imagens/carrinho-de-compras.png" alt="botão do carrinho">
+            </div> 
+        </div>
+    </div>
+    <!------menu para ver os itens--------->
+    <div class="menu-de-itens" id="menuitens"> 
+        <h2 class="titulo-itens">MENU</h2>
+        <div class="itens-do-menu">
+            • BRACELETES
+        </div>
+        <div class="itens-do-menu">
+            • BRINCOS
+        </div>
+        <div class="itens-do-menu">
+            • COLARES
+        </div>
+        <div class="itens-do-menu">
+            • COSMÉTICOS
+        </div>
+        <div class="botao-fechar" id="botaosaida">
+            <span class="estilo-botao-fechar">&times;</span>
+        </div>
+    </div>
+    <div class="overlay-menu"></div>
+    <main> <!----espaço---->
+
+    </main>
+    <h1 class="titulo-do-site">BRACELETES</h1>
+    <div class="todos-cards"> <!--envolve todos os cards-->
+        <div class="card"> <!--card individual-->
+            <div class="gallery">
+                <img class="foto-produto" src="imagens/joia-teste.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="imagens/joia-teste.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="imagens/joia-teste.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="imagens/joia-teste.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="imagens/joia-teste.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="imagens/joia-teste.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro (cor ouro)</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="imagens/joia-teste.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="braceletes/foto3.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>10.50</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="braceletes/foto2.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>60.00</span></p>
+            <button class="botao-adicionar">ADICIONAR</button>
+        </div>
+        <div class="card">
+            <div class="gallery">
+                <img class="foto-produto" src="braceletes/foto1.jpg" alt="produto">
+            </div>
+            <h3 class="titulo-produto">anel de ouro</h3>
+            <p class="preco">R$<span>23.90</span></p>
+            <button class="botao-adicionar" onclick="openModal()">ADICIONAR</button>
+        </div>
+    </div>
+<!------------------------------------------------------------------------------------------------>
+    
+<!------------------------------------------------------------------------------------------------>
+    <main> <!----espaço---->
+
+    </main>
+    <div class="botao-do-whats">
+        <a href="https://api.whatsapp.com/send?phone=559996418464">
+            <img src="imagens/whats-botao.png" alt="botão do whatsapp">
+        </a>
+    </div>
+    <!-----rodape------->
+    <footer> 
+        <div class="sla">
+            <h2>Redes</h2>
+            <div class="redes">
+                <img src="imagens/instagram.png" alt="instagram">
+                <a class="nomes-links" href="https://www.instagram.com/studio_alverlyaguiar">
+                    Instagram
+                </a>
+            </div>
+        </div>
+        <div class="sla">
+            <h2>Contato</h2>
+                <div class="contato">
+                    <img src="imagens/whatsapp.png" alt="whatsapp">
+                    <a class="nomes-links" href="https://api.whatsapp.com/send?phone=559996418464">  
+                        Whatsapp
+                    </a>
+                </div>
+        </div>
+        <div class="sla">
+            <h2>Localização</h2>
+            <div class="localização">
+                <img src="imagens/localização.png" alt="localização">
+                <a class="nomes-links" href="https://maps.app.goo.gl/GcvZe7tiLbTTjmbR6?g_st=ic">
+                    Localização
+                </a>
+            </div> 
+        </div>
+    </footer>
+    <footer class="direitos">
+        <p>&copy; 2022-2024 Studio Alverly Aguiar. <br>
+        Todos os direitos reservados</p>
+    </footer>
+
+    <!------------SCRIPT----------------->
+    <script src="js/script.js"></script>
+</body>
+</html>
